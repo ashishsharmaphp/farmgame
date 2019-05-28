@@ -1,0 +1,56 @@
+<!--
+ Created by Ashish Sharma
+ Date: 27/05/2019
+ Time: 04:50 PM
+
+  This file contains the html code for AVADOLearning/farmgame
+-->
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>AVADO Learning / Farm Game</title>
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="game.js"></script>
+</head>
+<body>
+<h2 align="center">AVADO Learning / Farm Game</h2>
+<div style="float:left; width: 40%">
+    <h2>Game Rules</h2>
+    <ol>
+        <li>On click of <b>Feed</b> button game starts.</li>
+        <li>The word <b>Fed</b> will indicate who has been fed in each round.</li>
+        <li>After each <b>7</b> feed any of the person/animal will be died</li>
+        <li>You will loose <b>If farmer dies</b></li>
+        <li>You will win <b>If you successfully complete 50 rounds</b></li>
+    </ol>
+
+    <h1 style="color:red; display:none" id="lblLost">Sorry!! You Lost</h1>
+    <h1 style="color:red; display:none" id="lblWon">Congratulations!! You Won</h1>
+</div>
+<div style="float:left; width: 60%">
+    <input type="button" id="btnFeed" value="Feed">
+    <br>
+    <br>
+
+    <table id="gameTbl" border="1">
+        <thead>
+        <tr>
+            <th>Round</th>
+            <th FedCount="0">Farmer</th>
+            <th FedCount="0">Cow1</th>
+            <th FedCount="0">Cow2</th>
+            <th FedCount="0">Bunny1</th>
+            <th FedCount="0">Bunny2</th>
+            <th FedCount="0">Bunny3</th>
+            <th FedCount="0">Bunny4</th>
+        </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+<div>
+    <input type="hidden" id="txtDied" value="">
+    <input type="hidden" id="txtRound" value="1">
+</div>
+</body>
+</html>
